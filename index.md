@@ -1,58 +1,86 @@
 Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
 ======================================================
 
-## Instalación de NodeJS en Windows
+## Instalación de Git
 
-Es un intérprete **Javascript** del lado del servidor que cambia la noción de cómo debería trabajar un servidor. Su meta es permitir a un programador construir aplicaciones altamente escalables y escribir código que maneje decenas de miles de conexiones simultáneas en una sólo una máquina física.
+**Git** es un software de control de versiones diseñado por [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds), pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente.
 
-Para empezar a utilizarlo descargar el paquete de instalación para la plataforma windows y seguir los pasos del asistente de instalación de **NodeJS**.
-
-![](images/node.png)
-
-Abrimos la consola de **NodeJS** y comprobamos que se ha instalado correctamente, aparecerá el siguiente mensaje que indica que se ha instalado.
-
-Instalamos el framework **Express** con la consola de **NodeJS** y el siguiente comando:
+Para instalar git en Linux, nos basta con ejecutar los siguientes comandos en la terminal:
 
 **Comando**
+> `sudo apt-get update`
+> `sudo apt-get install git`
 
-> `npm install express --save`
+Para instalar git en Windows o Mac, nos tenemos que bajar el [instalador](https://desktop.github.com) e instalarlo como normalmente instalamos cualquier programa de windows o Mac, siguiendo los pasos que nos van saliendo.
 
-![](images/node2.png)
+## Instalación de Atom
 
-## Instalación del editor de texto Atom
+**Atom** es un editor de código para OS X, Linux y Windows que soporta plug-ins escritos en Node.js, fue desarrollado por GitHub.
 
-Usaremos **Atom** como editor de texto para el desarrollo de nuestros proyectos, para ello descargamos el instalador en la página oficial de atom, y a continuación ejecutamos el asistente de instalación.
+Para instalarlo tenemos dos formas:
 
-![](images/atom1.png)
-
-Dado que vamos a utilizar el formato **Markdown** es bueno saber que en **Atom** podremos obtener una preview del contenido de nuestro fichero Markdown ya que incorpora el formato **GitHub Markdown** con el comando:
-
+-Ir a la [web de descarga](https://atom.io/) y descargar el paquete instalador.
+-Ejecutar el comando en la terminal:
 **Comando**
+>  `sudo dpkg -i atom-amd64.deb`
 
-> * Markdown preview `ctrl+shift+m`
-> * Markdown export to HTML `Save As HTML`
-
-
-
-## Instalación de GitHub Desktop
-
-GitHub es una plataforma para alojar proyectos utilizando el sistema de control de versiones **Git**. Para instalarlo accedemos a la página oficial de **GitHub** y descargamos el instalador que ejecutaremos posteriormente para iniciar el asistente de instalación.
-
-![](images/git.png)
-
-Una vez instalado configuramos nuestra cuenta de **GitHub** en la aplicación para poder sincronizar nuestro repositorio tanto local como remoto, en caso de no tener cuenta crearemos una en la página de **GitHub**.
-
-## Cloud 9
+##Cloud9
 
 Es un IDE de desarrollo online, para su uso será necesario crear una cuenta en la página oficial o acceder con las credenciales de GitHub si ya se dispone de una cuenta. Una vez registrados podremos crear proyectos de varias tecnologías como puede ser NodeJS, HTML5, C++, Ruby On Rails, etc.
 
-![](images/cloud.png)
+Una ves tengamos nuestra cuenta en cloud9 podremos vincularla con github, para ello vamos a **cloud9 > Account Settings > Connected Services** y nos deberia aparecer algo como esto:
 
-Si disponemos de algún proyecto en un repositorio de GitHub podremos asociarlo a **Cloud9** para trabajar en él tan solo creando un “`nuevo workspace`” y añadiendo la url *git* del correspondiente repositorio.
+![](images/git-c9.png)
 
-![](images/cloud2.png)
+Y le damos a **connect**.
 
-Además **Cloud9** permite el trabajo en equipo en el IDE añadiendo miembros a tu workspace.
+## Node.js  
+
+**Node.js** es un entorno en tiempo ejecución multiplataforma, de código abierto, para la capa del servidor, basado en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google. 
+
+Una de las formas de install node.js es poniendo en la terminal de ubuntu:
+
+**Comando** 
+> `curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -`
+>`sudo apt-get install -y nodejs`
+
+Y otra, la más clásica, descargandolo de la [web](https://nodejs.org/en/) para tu sistema operativo.
+
+Una ves instalado comprobamos que funciona correctamente, ejecutamos el comando en nuestra terminal:
+
+**Comando** 
+>`npm ls`
+
+Y nos muestra la siguiente imagen:
+
+![](images/Nodejs.png)
+
+##Express
+
+Es un framework de aplicaciones web de Node.js el cual aporta un conjunto de características web, incluidas aplicaciones web y su soporte.
+
+Para instalarlo escribimos en la terminal:
+
+**Comando** 
+>`npm install express --save` 
+
+Y nos saldrá algo como esto:
+
+![](images/express.png)
+
+##Pandoc
+
+**Pandoc** es un traductor que nos permite obtener ficheros en varios lenguajes, en nuestra práctica lo usuaremos para generar de Markdown a HTML.
+
+Para instalar Pandoc ejecutamos el comando en nuestra terminal:
+
+**Comando**
+>`sudo apt-get install pandoc`
+
+Para convertir de un fichero Markdown a html lo hariamos de la siguiente forma:
+
+**Comando**
+>`pandoc -o index.html index.md`
 
 ## Markdown
 
