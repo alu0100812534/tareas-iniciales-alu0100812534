@@ -1,81 +1,192 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <title>Practica 1 PL</title>
-  <link rel="stylesheet" href="index.css" type="text/css" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Tareas-iniciales-alu0100812534</title>
+  <meta name="description" content="tareas-iniciales-alu0100812534 created by Classroom for GitHub">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
 </head>
+
 <body>
-<h1 id="tutorial-nodejs-express-atom-github-cloud9-y-markdown">Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown</h1>
-<h2 id="instalación-de-git">Instalación de Git</h2>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Tareas-iniciales-alu0100812534</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">tareas-iniciales-alu0100812534 created by Classroom for GitHub</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/alu0100812534/tareas-iniciales-alu0100812534/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/alu0100812534/tareas-iniciales-alu0100812534/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/alu0100812534/tareas-iniciales-alu0100812534" class="code">View Tareas-iniciales-alu0100812534 on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="tutorial-nodejs-express-atom-github-cloud9-y-markdown" class="anchor" href="#tutorial-nodejs-express-atom-github-cloud9-y-markdown" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown</h1>
+
+<h2>
+<a id="instalación-de-git" class="anchor" href="#instalaci%C3%B3n-de-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instalación de Git</h2>
+
 <p><strong>Git</strong> es un software de control de versiones diseñado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente.</p>
+
 <p>Para instalar git en Linux, nos basta con ejecutar los siguientes comandos en la terminal:</p>
-<p><strong>Comando</strong> &gt; <code>sudo apt-get update</code> &gt; <code>sudo apt-get install git</code></p>
+
+<p><strong>Comando</strong></p>
+
+<blockquote>
+<p><code>sudo apt-get update</code>
+<code>sudo apt-get install git</code></p>
+</blockquote>
+
 <p>Para instalar git en Windows o Mac, nos tenemos que bajar el <a href="https://desktop.github.com">instalador</a> e instalarlo como normalmente instalamos cualquier programa de windows o Mac, siguiendo los pasos que nos van saliendo.</p>
-<h2 id="instalación-de-atom">Instalación de Atom</h2>
+
+<h2>
+<a id="instalación-de-atom" class="anchor" href="#instalaci%C3%B3n-de-atom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instalación de Atom</h2>
+
 <p><strong>Atom</strong> es un editor de código para OS X, Linux y Windows que soporta plug-ins escritos en Node.js, fue desarrollado por GitHub.</p>
+
 <p>Para instalarlo tenemos dos formas:</p>
-<p>-Ir a la <a href="https://atom.io/">web de descarga</a> y descargar el paquete instalador. -Ejecutar el comando en la terminal: <strong>Comando</strong> &gt; <code>sudo dpkg -i atom-amd64.deb</code></p>
-<h2 id="cloud9">Cloud9</h2>
+
+<p>-Ir a la <a href="https://atom.io/">web de descarga</a> y descargar el paquete instalador.
+-Ejecutar el comando en la terminal:
+<strong>Comando</strong></p>
+
+<blockquote>
+<p><code>sudo dpkg -i atom-amd64.deb</code></p>
+</blockquote>
+
+<h2>
+<a id="cloud9" class="anchor" href="#cloud9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cloud9</h2>
+
 <p>Es un IDE de desarrollo online, para su uso será necesario crear una cuenta en la página oficial o acceder con las credenciales de GitHub si ya se dispone de una cuenta. Una vez registrados podremos crear proyectos de varias tecnologías como puede ser NodeJS, HTML5, C++, Ruby On Rails, etc.</p>
+
 <p>Una ves tengamos nuestra cuenta en cloud9 podremos vincularla con github, para ello vamos a <strong>cloud9 &gt; Account Settings &gt; Connected Services</strong> y nos deberia aparecer algo como esto:</p>
-<div class="figure">
-<img src="images/git-c9.png" />
 
-</div>
+<p><img src="images/git-c9.png" alt=""></p>
+
 <p>Y le damos a <strong>connect</strong>.</p>
-<h2 id="node.js">Node.js</h2>
-<p><strong>Node.js</strong> es un entorno en tiempo ejecución multiplataforma, de código abierto, para la capa del servidor, basado en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google.</p>
+
+<h2>
+<a id="nodejs" class="anchor" href="#nodejs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Node.js</h2>
+
+<p><strong>Node.js</strong> es un entorno en tiempo ejecución multiplataforma, de código abierto, para la capa del servidor, basado en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google. </p>
+
 <p>Una de las formas de install node.js es poniendo en la terminal de ubuntu:</p>
-<p><strong>Comando</strong> &gt; <code>curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -</code> &gt;<code>sudo apt-get install -y nodejs</code></p>
+
+<p><strong>Comando</strong> </p>
+
+<blockquote>
+<p><code>curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -</code>
+<code>sudo apt-get install -y nodejs</code></p>
+</blockquote>
+
 <p>Y otra, la más clásica, descargandolo de la <a href="https://nodejs.org/en/">web</a> para tu sistema operativo.</p>
+
 <p>Una ves instalado comprobamos que funciona correctamente, ejecutamos el comando en nuestra terminal:</p>
-<p><strong>Comando</strong> &gt;<code>npm ls</code></p>
+
+<p><strong>Comando</strong> </p>
+
+<blockquote>
+<p><code>npm ls</code></p>
+</blockquote>
+
 <p>Y nos muestra la siguiente imagen:</p>
-<div class="figure">
-<img src="images/Nodejs.png" />
 
-</div>
-<h2 id="express">Express</h2>
+<p><img src="images/Nodejs.png" alt=""></p>
+
+<h2>
+<a id="express" class="anchor" href="#express" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Express</h2>
+
 <p>Es un framework de aplicaciones web de Node.js el cual aporta un conjunto de características web, incluidas aplicaciones web y su soporte.</p>
-<p>Para instalarlo escribimos en la terminal:</p>
-<p><strong>Comando</strong> &gt;<code>npm install express --save</code></p>
-<p>Y nos saldrá algo como esto:</p>
-<div class="figure">
-<img src="images/express.png" />
 
-</div>
-<h2 id="pandoc">Pandoc</h2>
+<p>Para instalarlo escribimos en la terminal:</p>
+
+<p><strong>Comando</strong> </p>
+
+<blockquote>
+<p><code>npm install express --save</code> </p>
+</blockquote>
+
+<p>Y nos saldrá algo como esto:</p>
+
+<p><img src="images/express.png" alt=""></p>
+
+<h2>
+<a id="pandoc" class="anchor" href="#pandoc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pandoc</h2>
+
 <p><strong>Pandoc</strong> es un traductor que nos permite obtener ficheros en varios lenguajes, en nuestra práctica lo usuaremos para generar de Markdown a HTML.</p>
+
 <p>Para instalar Pandoc ejecutamos el comando en nuestra terminal:</p>
-<p><strong>Comando</strong> &gt;<code>sudo apt-get install pandoc</code></p>
+
+<p><strong>Comando</strong></p>
+
+<blockquote>
+<p><code>sudo apt-get install pandoc</code></p>
+</blockquote>
+
 <p>Para convertir de un fichero Markdown a html lo hariamos de la siguiente forma:</p>
-<p><strong>Comando</strong> &gt;<code>pandoc -o index.html index.md</code></p>
-<h2 id="markdown">Markdown</h2>
+
+<p><strong>Comando</strong></p>
+
+<blockquote>
+<p><code>pandoc -o index.html index.md</code></p>
+</blockquote>
+
+<h2>
+<a id="markdown" class="anchor" href="#markdown" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Markdown</h2>
+
 <p>Markdown es un lenguaje de marcado ligero, lo vamos a utilizar en el editor de texto Atom ya que incorpora por defecto este formato y podremos obtener un live preview mientras vamos desarrollando además de poder exportarlo a HTML sin la necesidad de usar un conversor adicional.</p>
+
 <p>Sintaxis:</p>
+
 <p>Encabezados</p>
+
 <pre><code># Encabezado H1
 ## Encabezado H2
-### Encabezado H3</code></pre>
+### Encabezado H3
+</code></pre>
+
 <p>Tipografía</p>
+
 <pre><code>**Negrita**
 *Cursiva*
 &gt; Citas
 Parrafo separar por lineas en blanco
-`Codigo`</code></pre>
+`Codigo`
+</code></pre>
+
 <p>Recursos</p>
+
 <pre><code>![Texto imagen](url-imagen)
-* [Links](https://example.com)</code></pre>
+* [Links](https://example.com)
+</code></pre>
+
 <p>Listas</p>
+
 <pre><code>1. Lista 1
 2. Lista 2
 
 * Lista 1
-* Lista 2</code></pre>
+* Lista 2
+</code></pre>
+
 <p><strong>Recursos:</strong></p>
+
 <ul>
 <li><a href="https://nodejs.org">NodeJS</a></li>
 <li><a href="http://expressjs.com">Express</a></li>
@@ -86,5 +197,26 @@ Parrafo separar por lineas en blanco
 <li><a href="http://daringfireball.net/projects/markdown/">Markdown</a></li>
 <li><a href="http://alu0100536652.github.io/Tutorial-STW/">Resultado del Markdown HTML</a></li>
 </ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/alu0100812534" class="avatar"><img src="https://avatars2.githubusercontent.com/u/17307307?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/alu0100812534">alu0100812534</a> maintains <a href="https://github.com/alu0100812534/tareas-iniciales-alu0100812534">Tareas-iniciales-alu0100812534</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/alu0100812534/tareas-iniciales-alu0100812534/tarball/master" class="tar">tar</a><a href="https://github.com/alu0100812534/tareas-iniciales-alu0100812534/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
 </body>
 </html>
